@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <script src="https://api.mapbox.com/mapbox-gl-js/v1.10.1/mapbox-gl.js"></script>
+    <link
+      href="https://api.mapbox.com/mapbox-gl-js/v1.10.1/mapbox-gl.css"
+      rel="stylesheet"
+    />
+    <link rel="shortcut icon" href="<%=require('./assets/images/favicon.png')%>" type="image/png">
+  </head>
+  <body>
+    <div class="main-screen">
+      <div class="dark-layer">
+        <div class="wrapper">
+          <div class="header">
+            <div class="controls">
+              <button class="btn btn_update">↺</button>
+              <select class="languages">
+                <option class="en">EN</option>
+                <option class="ru">RU</option>
+                <option class="be">BE</option>
+              </select>
+              <div class="scale">
+                <button class="btn fahrenheit"><sup>◦</sup>F</button>
+                <button class="btn celsius"><sup>◦</sup>C</button>
+              </div>
+            </div>
+            <form class="search">
+              <input type="text" placeholder="Search ciry or ZIP" />
+              <button class="btn translate-text" type="submit">Search</button
+              ><br />
+            </form>
+          </div>
+          <div class="error"></div>
+          <h1 class="location"></h1>
+          <div class="date-and-time">
+            <div class="date"></div>
+            <div class="time"></div>
+          </div>
+          <div class="weather-and-map">
+            <div class="weather">
+              <div class="weather__today">
+                <div class="degrees">
+                  <span class="convert-degrees"></span><img class="icon" alt="icon"/>
+                </div>
+                <div class="overcast">
+                  <div class="summary">Overcast</div>
+                  <div class="feelings">
+                    <span class="translate-text">Feels like:</span>
+                    <span class="convert-degrees value"><sup>◦</sup></span>
+                  </div>
+                  <div class="wind">
+                    <span class="translate-text">Wind:</span>
+                    <span class="value"></span>
+                    <span class="translate-text"> m/s</span>
+                  </div>
+                  <div class="humidity">
+                    <span class="translate-text">Humidity:</span>
+                    <span class="value"></span>
+                  </div>
+                </div>
+              </div>
+              <div class="weather__next-days">
+                <div class="next-day">
+                  <div class="day translate-dates translate-days"></div>
+                  <div class="degrees"></div>
+                </div>
+                <div class="next-day">
+                  <div class="day translate-dates translate-days"></div>
+                  <div class="degrees"></div>
+                </div>
+                <div class="next-day">
+                  <div class="day translate-dates translate-days"></div>
+                  <div class="degrees"></div>
+                </div>
+              </div>
+            </div>
+            <div id="map" class="map"></div>
+          </div>
+          <div class="lat">
+            <span class="translate-text">latitude: </span
+            ><span class="value"></span><sup>◦</sup>
+          </div>
+          <div class="lng">
+            <span class="translate-text">longitude: </span
+            ><span class="value"></span><sup>◦</sup>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="loader">
+      <div class="loader__spin">
+        <hr />
+        <hr />
+        <hr />
+        <hr />
+      </div>
+    </div>
+  </body>
+</html>
