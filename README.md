@@ -16,7 +16,7 @@ The Fancy-weather application was created using **HTML, SASS, JS, Webpack** and 
 4. Settings at the first launch of the application: language - English, temperature units - degrees Celsius:
 5. language switcher changes the language of the page text (en / ru / be).
 6. The temperature switcher changes the temperature unit (° C / ° F).
-7. User language and temperature settings are stored in local storage.
+7. User language and temperature settings are stored in localStorage.
 
 **To run the application, you need to**
 1. Install Node.js
