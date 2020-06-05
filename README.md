@@ -7,6 +7,7 @@ The Fancy-weather application was created using **HTML, SASS, JS, Webpack** and 
 3. Images API - https://unsplash.com/developers
 4. Map API - https://www.mapbox.com
 5. Geocoding API - https://opencagedata.com/
+6. Yandex.Translate API - https://tech.yandex.com/translate/
 
 **Application description**
 1. When the user opens the application, all the data on the page refers to the user's current location
