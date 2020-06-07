@@ -18,7 +18,7 @@ The Fancy-weather application was created using **HTML, SASS, JS, Webpack** and 
 6. The temperature switch changes the temperature unit (° C / ° F).
 7. User's language and temperature settings are stored in localStorage.
 
-**To run the application, you need to**
+**To run the application you need to**
 1. Install Node.js
 2. Clone the repository
 3. Go to folder fancy-weather
