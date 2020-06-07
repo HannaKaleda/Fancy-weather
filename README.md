@@ -10,13 +10,13 @@ The Fancy-weather application was created using **HTML, SASS, JS, Webpack** and 
 6. Yandex.Translate API - https://tech.yandex.com/translate/
 
 **Application description**
-1. When the user opens the application, all the data on the page refers to the user's current location
-2. The search bar searches for a settlement
-3. The background image changes when the page is updated or when a button is clicked to switch the background image in the control unit
-4. Settings at the first launch of the application: language - English, temperature units - degrees Celsius:
+1. All the data on the page refers to the user's current location when the user opens the application.
+2. The search bar searches for a settlement.
+3. The background image changes when the page is updated or when a button to switch the background image in the control unit is clicked.
+4. Settings at the first launch of the application: language - English, temperature units - degrees Celsius.
 5. language switch changes the language of the page text (en / ru / be).
 6. The temperature switch changes the temperature unit (° C / ° F).
-7. User language and temperature settings are stored in localStorage.
+7. User's language and temperature settings are stored in localStorage.
 
 **To run the application, you need to**
 1. Install Node.js
